@@ -1,0 +1,81 @@
+{
+  "productName": "compressor",
+  "name": "compressor",
+  "author": "Lucas Christian",
+  "description": "Um compressor de imagens open source!",
+  "version": "1.0.1",
+  "license": "MIT",
+  "private": true,
+  "main": "main/electron-src/index.js",
+  "scripts": {
+    "build": "npm run build-renderer && npm run build-electron",
+    "build-electron": "tsc -p electron-src",
+    "build-renderer": "next build renderer && next export renderer",
+    "clean": "rimraf dist main renderer/out renderer/.next",
+    "dev": "npm run build-electron && electron .",
+    "dist": "npm run build && electron-builder",
+    "test": "vitest",
+    "type-check": "tsc -p ./renderer/tsconfig.json && tsc -p ./electron-src/tsconfig.json"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.0.1",
+    "electron-is-dev": "^2.0.0",
+    "electron-next": "^3.1.5",
+    "jimp": "^0.16.2",
+    "node-mime-types": "^1.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-tooltip": "^5.5.1",
+    "resize-image-buffer": "^1.0.0",
+    "sqlite": "^4.1.2",
+    "sqlite3": "^5.1.4",
+    "sqlite3-offline-next": "^5.0.3"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^13.4.0",
+    "@types/file-type": "^10.9.1",
+    "@types/mime": "^3.0.1",
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@types/sqlite3": "^3.1.8",
+    "@vitejs/plugin-react": "^3.0.1",
+    "autoprefixer": "^10.4.13",
+    "electron": "^22.0.3",
+    "electron-builder": "^23.6.0",
+    "jsdom": "^21.0.0",
+    "next": "^13.1.2",
+    "postcss": "^8.4.21",
+    "rimraf": "^4.1.1",
+    "tailwindcss": "^3.2.4",
+    "typescript": "^4.9.4",
+    "vitest": "^0.27.2"
+  },
+  "build": {
+    "asar": true,
+    "files": [
+      "main",
+      "renderer/out"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ],
+      "icon": "icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "installerIcon": "icon.ico",
+      "uninstallerIcon": "icon.ico",
+      "uninstallDisplayName": "Uninstall - Compressor",
+      "allowToChangeInstallationDirectory": true,
+      "license": "license.md"
+    }
+  }
+}

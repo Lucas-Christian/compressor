@@ -1,0 +1,128 @@
+@tailwind base;
+
+@layer {
+  .bg-initial {
+    background-color: initial;
+  }
+  .appearance-auto {
+    appearance: auto;
+  }
+  .p-initial {
+    padding: initial;
+  }
+  .border-initial {
+    border: initial;
+  }
+
+  ::-webkit-scrollbar { 
+    @apply bg-gray-150 w-2 h-2;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-600;
+  }
+  input[type="number"] {
+    border: none;
+    height: 2.5rem;
+    outline: 0px solid #0000;
+    text-align: center;
+    line-height: 46px;
+    font-size: 24px;
+    font-weight: 700;
+    user-select: none;
+    background-color: transparent;
+    color: #E1E1E6;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    position: absolute;
+  }
+  input[type="number"]::-webkit-outer-spin-button {
+    @apply hidden;
+  }
+  input[type="number"]::-webkit-inner-spin-button {
+    @apply hidden;
+  }
+
+  input[type="checkbox"] {
+    @apply hidden;
+  }
+  input[type="checkbox" i] {
+    @apply cursor-default ml-1 mt-[0.1875rem] mr-[0.1875rem] mb-[0.1875rem] box-border 
+    bg-initial appearance-auto p-initial border-initial;
+  }
+
+  input[type="checkbox"] + label {
+    display: block;
+    position: relative;
+    width: 3em;
+    height: 1.6em;
+    background: #50565a;
+    border-radius: 1em;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: background 0.1s ease-in-out;
+    transition: background 0.1s ease-in-out;
+  }
+
+  input[type="checkbox"]:checked + label:before {
+    @apply left-[1.6em] rotate-45;
+    background: #47cf73;
+    box-shadow: -2px 0px 5px rgb(0 0 0 / 20%);
+  }
+  input[type="checkbox"] + label:before {
+    content: "";
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 1em;
+    background: #e84d4d;
+    position: absolute;
+    left: 0.2em;
+    top: 0.2em;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+
+span {
+  font-size: 0.8em;
+}
+h1 {
+  font-size: 1.8em;
+}
+h2 {
+  font-size: 1.6em;
+}
+svg {
+  width: 26px;
+  height: 26px;
+}
+@media only screen and (max-width: 1150px) {
+  p {
+    font-size: 0.7em;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+  span {
+    font-size: 0.5em;
+  }
+  input[type="number"] {
+    font-size: 7px;
+  }
+}
