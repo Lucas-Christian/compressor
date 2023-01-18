@@ -1,0 +1,8 @@
+@tailwind base;
+
+* {
+  @apply font-sans;
+}
+
+@tailwind components;
+@tailwind utilities;
