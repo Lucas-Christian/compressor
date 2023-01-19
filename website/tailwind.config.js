@@ -26,7 +26,10 @@ module.exports = {
       "blue-700": "#1d4ed8",
       "blue-600": "#386BFB",
 
+      "red": "#f13d3d",
+
       "transparent": "rgba(0,0,0,0)"
+
     },
     extend: {
       fontFamily: {

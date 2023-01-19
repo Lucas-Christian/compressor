@@ -24,7 +24,11 @@ export function Carousel() {
         className={`w-6 h-6 sm:w-12 sm:h-12 ${actual > 0 ? "cursor-pointer stroke-white" : "stroke-gray-100"}`}
       />
       <div className="w-48 h-20 sm:w-96 sm:h-56">
-        <RenderImage actual={actual} />
+        <RenderImage 
+          actual={actual} 
+          increaseActual={increaseActual} 
+          decreaseActual={decreaseActual} 
+        />
       </div>
       <ChevronRightIcon 
         onClick={increaseActual} 

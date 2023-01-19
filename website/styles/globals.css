@@ -1,7 +1,22 @@
 @tailwind base;
 
+/* Firefox */
 * {
-  @apply font-sans;
+  scrollbar-width: 16px;
+  @apply [scrollbar-color:#E1E1E6#FFFFFF] dark:[scrollbar-color:#343434#242424] border-none outline-none no-underline;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  @apply w-4;
+}
+
+*::-webkit-scrollbar-track {
+  @apply bg-gray-10 dark:bg-gray-150;
+}
+
+*::-webkit-scrollbar-thumb {
+  @apply bg-white dark:bg-gray-400;
 }
 
 @tailwind components;
