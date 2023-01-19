@@ -38,7 +38,7 @@ export default function Home() {
                 <Text size="md" bold>Status</Text>
                 <Text size="md" bold>Download</Text>
               </div>
-              <div className="w-full h-[7.5rem] flex flex-col gap-2 pt-5 pb-5 overflow-y-auto pr-5 pl-5 sm:pr-[6.5rem] sm:pl-20">
+              <div className="w-[50vw] h-[7.5rem] flex flex-col gap-2 pt-5 pb-5 overflow-y-auto pr-5 pl-5 sm:pr-[6.5rem] sm:pl-20">
                 <RenderVersions />
               </div>
             </div>
