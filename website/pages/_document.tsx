@@ -8,7 +8,7 @@ export default class MyDocument extends Document {
         <Head>
           <Meta />
         </Head>
-        <body className="min-h-screen max-w-screen bg-gray-600 select-none">
+        <body className="min-h-screen max-w-screen bg-gray-600 select-none flex flex-col justify-center items-center">
           <Main />
           <NextScript />
         </body>

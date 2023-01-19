@@ -17,7 +17,7 @@ export function Text({ size = "md", bold = false, children, asChild, className }
 
   return (
     <Comp className={classNames(
-      size === "sm" ? "text-xs" : size === "md" ? "text-sm" : "text-base", 
+      size === "sm" ? "text-xs" : size === "md" ? "text-xs sm:text-sm" : "text-sm sm:text-base", 
       bold ? "font-semibold" : "",
       "text-white font-sans "+
       (className ? className : "")
