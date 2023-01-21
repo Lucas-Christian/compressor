@@ -30,7 +30,7 @@ export function ModalCarousel({ isOpen, actual, setIsOpen, decreaseActual, incre
           <div className="flex justify-center items-center">
             <ChevronLeftIcon 
               onClick={decreaseActual}
-              className={`w-16 h-16 sm:w-32 sm:h-32 ${actual > 0 ? "cursor-pointer stroke-white" : "stroke-gray-100"}`}
+              className={`w-16 h-16 sm:w-32 sm:h-32 ${actual > 0 ? "cursor-pointer stroke-white" : "stroke-gray-150"}`}
             />
             <div className="w-3/4 flex justify-center items-center gap-2">
               <img
@@ -42,7 +42,7 @@ export function ModalCarousel({ isOpen, actual, setIsOpen, decreaseActual, incre
             </div>
             <ChevronRightIcon 
               onClick={increaseActual} 
-              className={`w-16 h-16 sm:w-32 sm:h-32 ${actual < (images.length - 1) ? "cursor-pointer stroke-white" : "stroke-gray-100"}`} 
+              className={`w-16 h-16 sm:w-32 sm:h-32 ${actual < (images.length - 1) ? "cursor-pointer stroke-white" : "stroke-gray-150"}`} 
             />
           </div>
           <div className="w-3/4 flex justify-start">
