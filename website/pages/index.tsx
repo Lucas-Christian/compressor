@@ -46,7 +46,7 @@ export default function Home() {
         </div>
         <Link
           key={"github repository"}
-          href={"https://github.com/Lucas-Christian/compressor/tree/v1.0.1---Alpha---Unstable"}
+          href={"https://github.com/Lucas-Christian/compressor/tree/v1.0.1-alpha-unstable"}
           aria-label={"Compressor repository"}
           target="__blank"
           rel="external"
