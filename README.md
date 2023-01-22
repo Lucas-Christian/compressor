@@ -1,12 +1,27 @@
-Compressor - v1.0.1 - Alpha
+# Compressor
 
-Baixe o melhor compressor de imagens!
+Este é um projeto feito por Lucas Christian, é um software
+que comprime imagens em massa, ao selecionar uma pasta de 
+origem(local do qual as imagens irão vir), uma pasta de
+destino(local para o qual as imagens irão após a compressão), e
+selecionar as opções de compressão, após isso basta iniciar!
 
-Ao menos é isso o que eu quero que seja, atualmente o Compressor está no Alpha, e 
-sim eu sei que está mau-escrito, e tem muitas coisas que podem ser melhoradas, esse
-código será completamente reescrito, e resolvi lançar essa versão pois já é 
-funcional, e para muitas pessoas pode acabar sendo útil, esse Compressor agora é open source, e caso queira pode se tornar um colaborador através dos pull request, caso
-encontre algum erro(É ESPERADO QUE EXISTAM ERROS, E MUITOS), poste uma issues, se
-arrumar o erro pode postar um pull request, que eu irei verificar, e aceitar.
+## Como posso colaborar?
 
-Agradeço desde já para todos que resolverem colaborar com este projeto!
+Caso queira colaborar com o projeto, seja deixando uma parte mais 
+eficiente, ou caso tenha ideias de novas features, pode sempre fazer 
+um pull request!
+
+## Identificou um erro no compressor?
+
+Caso tenha identificado algum erro, basta abrir uma issue, e caso já tenha
+resolvido esse erro, por favor faça um pull request, para colaborar com o projeto!
+
+## Quer fazer o seu próprio compressor?
+
+Você pode fazer o seu próprio compressor ao clonar este repositório e utilizar a licença do MIT!
+
+## Autores
+
+- [Lucas Christian](https://github.com/Lucas-Christian)
+- [LordLuch (Minha conta privada)](https://www.github.com/LordLuch)
